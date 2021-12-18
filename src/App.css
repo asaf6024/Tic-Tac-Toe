@@ -1,39 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.game {
+  background-color: rgb(44, 24, 24) !important;
+  /* width: 100%; */
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+.row {
+  /* background: black; */
+  /* width: 100%; */
+  /* display: block; */
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+}
+.board-row {
+  width: 400px;
+  background: white;
+  display: flex;
+  background: inherit;
+}
+.board-row .square {
+  width: 100%;
+  height: 100px;
+  margin: 5px 5px 5px 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bold;
+}
+.board-row .square:hover {
+  background: inherit;
+  cursor: pointer;
+  color: #fff;
+}
+.game .btn-info {
+  display: inline !important;
+}
+.game .btn-primary {
+  background: rgb(44, 24, 24) !important;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.game .btn-primary:hover,
+.game .btn-primary:focus {
+  background: rgb(20, 17, 17) !important;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.game .circleBtn {
+  flex-shrink: 0;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 25%;
+  height: 32px;
+  width: 32px;
+  margin: 3px;
+  padding: 2px;
+  font-size: 18px;
+  font-family: var(--header-font-00);
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.game ol {
+  padding: 0 !important;
+}
+@media only screen and (max-width: 600px) {
+  .game h1 {
+    padding-top: 50px;
   }
-  50% {
-    transform: translateY(10px);
+  .board-row {
+    width: 100%;
   }
-  100% {
-    transform: translateY(0px);
+  .row.game-board {
+    width: 100% !important;
+  }
+  .game-board .board-container {
+    width: 100% !important;
+  }
+  .board-row .square {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    margin: 5px;
   }
 }
