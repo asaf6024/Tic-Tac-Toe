@@ -85,4 +85,7 @@
     margin: auto;
     margin: 5px;
   }
+  ol {
+    text-align: center;
+  }
 }
