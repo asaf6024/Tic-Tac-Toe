@@ -3,7 +3,7 @@
 
 A simple React app for a game of Tic Tac Toe
 
-![Tic Tac-Toe](https://user-images.githubusercontent.com/33829557/144406073-f9636014-1e43-4f02-8851-ad3cc821791d.gif)
+![tic-tac-toe](https://user-images.githubusercontent.com/33829557/146644236-b03331be-5903-424f-9bd0-be919395ad36.gif)
 
 ## Getting started
 
