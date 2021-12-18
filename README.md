@@ -1,7 +1,7 @@
 # Tic Tac-Toe
-##  [Live Demo](https://spotify-platylists-asaf.netlify.app/)
+##  [Live Demo](https://tictactoe-asaf.netlify.app/)
 
-A simple React app for a game of Tic Tac Toe
+A simple React app of a Tic Tac Toe game.
 
 ![tic-tac-toe](https://user-images.githubusercontent.com/33829557/146644236-b03331be-5903-424f-9bd0-be919395ad36.gif)
 
