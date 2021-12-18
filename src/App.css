@@ -70,7 +70,7 @@
 }
 @media only screen and (max-width: 600px) {
   .game h1 {
-    padding-top: 50px;
+    padding-top: 10px;
   }
   .board-row {
     width: 100%;
@@ -87,5 +87,9 @@
   }
   ol {
     text-align: center;
+  }
+  button.btn.white {
+    display: block;
+    margin: auto;
   }
 }
