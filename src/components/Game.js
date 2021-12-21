@@ -2,19 +2,13 @@ import Board from './Board'
 import { useLocalStorageState } from '../utils'
 
 function Game() {
-    const [history, setHistory] = useLocalStorageState('tic-tac-toe:history', [
-        Array(9).fill(null),
-    ])
-    const [currentStep, setCurrentStep] = useLocalStorageState(
-        'tic-tac-toe:step',
-        0,
-    )
+    const [history, setHistory] = useLocalStorageState('tic-tac-toe:history', [Array(9).fill(null),])
+    const [currentStep, setCurrentStep] = useLocalStorageState('tic-tac-toe:step', 0,)
 
     const currentSquares = history[currentStep]
     const winner = calculateWinner(currentSquares)
     const nextValue = calculateNextValue(currentSquares)
     const status = calculateStatus(winner, currentSquares, nextValue)
-
 
     function calculateStatus(winner, squares, nextValue) {
         return winner
